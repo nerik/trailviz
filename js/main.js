@@ -5,7 +5,7 @@ $(document).ready(function()
 
 	if (authCode !== "")
 	{
-		getHGToken(authCode);
+		//getHGToken(authCode);
 	}
 });
 
@@ -23,7 +23,7 @@ var getHGToken = function (authCode)
 		code: authCode,
 		client_id: '57d88846acd74d86bc34a2e2bdb29189',
 		client_secret : '452649e2671241bb8826c12521acfe2a',
-		redirect_uri: 'http://localhost:8000'
+		redirect_uri: 'http://127.0.0.1:3000/getToken'
 	}
 
 	$.ajax({
